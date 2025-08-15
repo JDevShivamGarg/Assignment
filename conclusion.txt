@@ -1,0 +1,15 @@
+This data is like a logbook for electricity, showing how the voltage changes from moment to moment.
+The voltage isn't flat; it goes up and down in a regular, wave-like pattern. 
+You can see lots of sharp spikes, which means the power level is changing very quickly. 
+It almost looks like a heartbeat, showing the flow of electricity. 
+Overall, these swings tell you how stable or jumpy the electrical supply is.
+
+The voltage readings fluctuate between approximately 25V and 100V over the recorded time period.
+
+There are several flat segments in the graph, indicating periods where the voltage remained constant before changing again.
+
+The overall trendline shows a slight downward slope, suggesting a gradual decrease in voltage across the observation period.
+
+Sudden jumps in voltage values may indicate operational changes, load variations, or measurement intervals capturing transient events.
+
+The relatively high R² value from the trendline equation would indicate how consistently the data follows the overall decreasing trend.

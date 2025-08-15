@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voltage Data Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+
+    <nav class="bg-blue-600 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white font-bold text-lg">Shivam Garg Assignment</h1>
+            <ul class="flex space-x-6">
+                <li><a href="{{ url_for('index') }}" class="text-white hover:text-yellow-300">Home</a></li>
+                <li><a href="{{ url_for('graphs') }}" class="text-white hover:text-yellow-300">Graphs</a></li>
+                <li><a href="{{ url_for('notebook') }}" class="text-white hover:text-yellow-300">Notebook</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mx-auto py-10 px-4">
+        <h1 class="text-3xl font-bold mb-8 text-center">Voltage Data Analysis</h1>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-2">Voltage vs. Timestamps</h2>
+            <p class="mb-4">This chart shows the relationship with Timestamps on the X-axis and Voltage on the Y-axis.</p>
+            <img src="{{ url_for('static', filename='voltage_vs_timestamps.png') }}" 
+                 alt="Voltage vs Timestamps Chart" 
+                 class="rounded-lg shadow-lg border border-gray-300 mx-auto">
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-2">Voltage Over Time with Trendline</h2>
+            <p class="mb-4">This chart shows the raw voltage data with a linear trendline.</p>
+            <img src="{{ url_for('static', filename='voltage_trendline.png') }}" 
+                 alt="Voltage Trendline Chart" 
+                 class="rounded-lg shadow-lg border border-gray-300 mx-auto">
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-semibold mb-2">Voltage Trend with 5-Day Moving Average</h2>
+            <p class="mb-4">This chart shows the voltage trend with a 5-day moving average.</p>
+            <img src="{{ url_for('static', filename='voltagemovingavg.png') }}" 
+                 alt="Voltage Trend with 5-Day Moving Average Chart" 
+                 class="rounded-lg shadow-lg border border-gray-300 mx-auto">
+        </section>
+    </div>
+</body>
+</html>
